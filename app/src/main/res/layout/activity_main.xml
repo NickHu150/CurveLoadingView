@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1B1B1B"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="zrzn.com.damping_view.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7C4DFF"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7C4DFF"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabSelectedTextColor="#50FFFFFF"
+        app:tabTextColor="#FFFFFF"/>
+    <zrzn.com.damping_view.DampingView.DampingViewPager
+        android:id="@+id/damp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
